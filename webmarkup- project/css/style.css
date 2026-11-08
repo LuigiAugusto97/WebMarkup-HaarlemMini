@@ -1,0 +1,1743 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+/* Haarlem Mini - CSS */
+
+
+/* Colours and fonts */
+
+:root {
+	--primary-color: #F8F5ED;
+	--primary-color-light: #FFFFFF;
+	--primary-color-dark: #E8DFCF;
+
+	--secondary-color: #4B2E63;
+	--secondary-color-light: #785A91;
+	--secondary-color-dark: #301C40;
+
+	--accent-color-1: #B58B43;
+	--accent-color-2: #477B73;
+	--accent-color-3: #A65D55;
+
+	--neutral-light: #F2F0EC;
+	--neutral-dark: #24212A;
+	--neutral-grey: #A6A0A8;
+}
+
+
+/* Basic styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: var(--primary-color);
+	color: var(--neutral-dark);
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Cinzel", serif;
+	color: var(--secondary-color);
+	line-height: 1.2;
+}
+
+a {
+	color: var(--secondary-color);
+}
+
+
+/* Header and menu */
+
+body > header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding: 1.5rem 5%;
+	background-color: var(--primary-color-light);
+	border-bottom: 2px solid var(--primary-color-dark);
+}
+
+.logo {
+	font-family: "Cinzel", serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--secondary-color);
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	color: var(--secondary-color);
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+nav a:hover {
+	color: var(--accent-color-1);
+}
+
+nav a:active {
+	color: var(--accent-color-3);
+}
+
+body > header .logo {
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+body > header .logo img {
+	display: block;
+	width: 11rem;
+	height: auto;
+}
+
+
+/* Home page */
+
+.introduction {
+	text-align: center;
+	padding: 5rem 1.5rem 3rem;
+}
+
+.introduction h1 {
+	font-size: 2.5rem;
+	max-width: 55rem;
+	margin: 0 auto 1.5rem;
+}
+
+.introduction p {
+	max-width: 45rem;
+	margin: 0 auto;
+	font-size: 1.1rem;
+}
+
+.interests {
+	padding: 3rem 1.5rem;
+	text-align: center;
+}
+
+.interests h2 {
+	color: #4B2E63;
+	margin-bottom: 2rem;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.5rem;
+	max-width: 75rem;
+	margin: 0 auto;
+}
+
+.card {
+	background-color: #FFFFFF;
+	border: 1px solid #E8DFCF;
+	border-radius: 0.75rem;
+	padding: 1.25rem;
+}
+
+.card figure {
+	margin: 0;
+}
+
+.card img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+.card figcaption {
+	font-size: 0.8rem;
+	color: #6A60A8;
+	margin-top: 0.5rem;
+}
+
+.card h3 {
+	color: #4B2E63;
+	margin-top: 1rem;
+}
+
+.card p {
+	line-height: 1.5;
+}
+
+.card a {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 0.75rem 1rem;
+	background-color: #4B2E63;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-radius: 0.4rem;
+}
+
+.card a:hover {
+	background-color: #785A91;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card figure {
+	width: 100%;
+}
+
+.card a {
+	margin-top: auto;
+}
+
+.card p {
+	margin-bottom: 1.5rem;
+}
+
+.discover {
+	max-width: 75rem;
+	margin: 2rem auto 5rem;
+	padding: 4rem 2rem;
+	background-color: var(--primary-color-light);
+	border: 1px solid var(--primary-color-dark);
+	border-radius: 1rem;
+	text-align: center;
+}
+
+.discover h2 {
+	font-size: 2rem;
+	margin: 0 0 1.5rem;
+}
+
+.discover p {
+	max-width: 45rem;
+	margin: 0 auto 2rem;
+	line-height: 1.7;
+}
+
+.discover-button {
+	display: inline-block;
+	padding: 0.9rem 1.75rem;
+	background-color: var(--secondary-color);
+	color: var(--primary-color-light);
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 0.5rem;
+}
+
+.discover-button:hover {
+	background-color: var(--secondary-color-light);
+}
+
+.discover-button:active {
+	background-color: var(--accent-color-3);
+}
+
+.introduction p {
+	word-spacing: 0.04em;
+	text-indent: 0.5rem;
+}
+
+.discover p::first-letter {
+	font-weight: 700;
+}
+
+
+/* Tabletop and Lore page */
+
+.lore-page {
+	max-width: none;
+	margin: 0;
+	padding: 0 0 5rem;
+}
+
+.lore-introduction {
+	background-color: var(--secondary-color-dark);
+	text-align: center;
+	padding: 5rem 1.5rem;
+}
+
+.lore-introduction .eyebrow {
+	color: var(--accent-color-1);
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+}
+
+.lore-introduction h1 {
+	color: var(--primary-color-light);
+	font-size: 2.75rem;
+	margin: 0 auto 1.5rem;
+}
+
+.lore-introduction h1::after {
+	content: "";
+	display: block;
+	width: 4rem;
+	height: 2px;
+	background-color: var(--accent-color-1);
+	margin: 1.5rem auto 0;
+}
+
+.lore-introduction > p:not(.eyebrow) {
+	max-width: 42rem;
+	margin: 0 auto;
+	color: var(--primary-color);
+	font-size: 1.1rem;
+	line-height: 1.7;
+}
+
+.lore-worlds {
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 4rem 1.5rem 0;
+}
+
+.lore-worlds > h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 0 0 1rem;
+}
+
+.lore-worlds > h2::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 2px;
+	background-color: var(--accent-color-1);
+	margin: 1rem auto 0;
+}
+
+.section-intro {
+	max-width: 43rem;
+	margin: 0 auto 3rem;
+	text-align: center;
+	line-height: 1.7;
+}
+
+.world-cards {
+	display: grid;
+	gap: 2rem;
+}
+
+.world-card {
+	display: grid;
+	grid-template-columns: 35% 1fr;
+	background-color: var(--primary-color-light);
+	border: 1px solid var(--primary-color-dark);
+	border-radius: 0.75rem;
+	overflow: hidden;
+}
+
+.world-card figure {
+	margin: 0;
+	background-color: var(--secondary-color-light);
+}
+
+.world-card img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 16rem;
+	object-fit: cover;
+}
+
+.world-card figcaption {
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 0.5rem;
+	color: var(--secondary-color-dark);
+}
+
+.world-card-content {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.world-card-content h3 {
+	font-size: 1.5rem;
+	margin: 0 0 1rem;
+}
+
+.world-card-content p {
+	line-height: 1.7;
+	margin: 0 0 1.5rem;
+}
+
+.world-button {
+	display: inline-block;
+	margin-top: auto;
+	padding: 0.8rem 1.5rem;
+	background-color: var(--secondary-color);
+	color: var(--primary-color-light);
+	text-decoration: none;
+	border-radius: 0.4rem;
+	font-weight: 600;
+}
+
+.world-button:hover {
+	background-color: var(--secondary-color-light);
+}
+
+.world-button:active {
+	background-color: var(--accent-color-3);
+}
+
+.world-card {
+	border-left: 4px solid var(--accent-color-1);
+	box-shadow: 0 4px 18px rgba(48, 28, 64, 0.06);
+	transition: box-shadow 0.2s ease;
+}
+
+.world-card:hover {
+	box-shadow: 0 8px 25px rgba(48, 28, 64, 0.12);
+}
+
+.world-category {
+	color: var(--accent-color-1);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	margin: 0 0 0.5rem;
+}
+
+.world-button {
+	transition: background-color 0.2s ease;
+}
+
+.world-card figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem;
+	background-color: #f8f5ef;
+}
+
+.world-card figure img {
+	display: block;
+	width: 100%;
+	height: 12rem;
+	min-height: 0;
+	object-fit: contain;
+}
+
+.world-card figcaption {
+	margin-top: 0.75rem;
+	text-align: center;
+}
+
+
+/* Materials and Tools page */
+
+.materials-page {
+	padding-bottom: 5rem;
+}
+
+.materials-introduction {
+	background-color: var(--secondary-color-dark);
+	text-align: center;
+	padding: 5rem 1.5rem;
+}
+
+.materials-introduction .eyebrow {
+	color: var(--accent-color-1);
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+}
+
+.materials-introduction h1 {
+	color: var(--primary-color-light);
+	font-size: 2.75rem;
+	margin: 0 auto 1.5rem;
+}
+
+.materials-introduction > p:not(.eyebrow) {
+	max-width: 43rem;
+	margin: 0 auto;
+	color: var(--primary-color);
+	line-height: 1.7;
+}
+
+.materials-content {
+	width: 90%;
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 4rem 0 0;
+}
+
+.materials-content > h2 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 0 0 1.5rem;
+}
+
+.materials-content > h2::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 2px;
+	background-color: var(--accent-color-1);
+	margin: 1rem auto 0;
+}
+
+.section-description {
+	max-width: 45rem;
+	margin: 0 auto 2.5rem;
+	text-align: center;
+	line-height: 1.7;
+}
+
+.materials-content > h3 {
+	text-align: center;
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+
+.materials-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.material-card {
+	background-color: var(--primary-color-light);
+	padding: 2rem;
+	border: 1px solid var(--primary-color-dark);
+	border-top: 4px solid var(--accent-color-1);
+	border-radius: 0.75rem;
+}
+
+.material-card h4 {
+	margin: 0 0 1rem;
+	font-size: 1.1rem;
+}
+
+.material-card p {
+	margin: 0;
+	line-height: 1.7;
+}
+
+.tools-table {
+	width: 100%;
+	max-width: 55rem;
+	margin: 0 auto;
+	border-collapse: collapse;
+	background-color: var(--primary-color-light);
+}
+
+.tools-table th,
+.tools-table td {
+	padding: 1rem 1.25rem;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--primary-color-dark);
+}
+
+.tools-table thead {
+	background-color: var(--secondary-color);
+	color: var(--primary-color-light);
+}
+
+.tools-table tbody tr:nth-child(even) {
+	background-color: #CFF;
+}
+
+.tools-table tbody tr:nth-child(odd) {
+	background-color: #FFF;
+}
+
+.tools-table tbody tr:hover {
+	outline: 2px solid var(--accent-color-1);
+	outline-offset: -2px;
+}
+
+
+/* Beginner Guide page */
+
+.guide-page {
+	padding-bottom: 5rem;
+}
+
+.guide-introduction {
+	background-color: var(--secondary-color-dark);
+	text-align: center;
+	padding: 5rem 1.5rem;
+}
+
+.guide-introduction .eyebrow {
+	color: var(--accent-color-1);
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+}
+
+.guide-introduction h1 {
+	color: var(--primary-color-light);
+	font-size: 2.75rem;
+	margin: 0 auto 1.5rem;
+}
+
+.guide-introduction > p:not(.eyebrow) {
+	max-width: 43rem;
+	margin: 0 auto;
+	color: var(--primary-color);
+	line-height: 1.7;
+}
+
+.guide-section {
+	width: 90%;
+	max-width: 70rem;
+	margin: 0 auto;
+	padding-top: 4rem;
+}
+
+.guide-section > h2 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 0 0 1.5rem;
+}
+
+.guide-section > h2::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 2px;
+	background-color: var(--accent-color-1);
+	margin: 1rem auto 0;
+}
+
+.guide-description {
+	max-width: 45rem;
+	margin: 0 auto 2.5rem;
+	text-align: center;
+	line-height: 1.7;
+}
+
+.workspace-card {
+	max-width: 45rem;
+	margin: 0 auto;
+	padding: 2rem;
+	background-color: var(--primary-color-light);
+	border: 1px solid var(--primary-color-dark);
+	border-top: 4px solid var(--accent-color-1);
+	border-radius: 0.75rem;
+}
+
+.workspace-card h3 {
+	margin: 0 0 1.5rem;
+	font-size: 1.3rem;
+}
+
+.workspace-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.workspace-list li {
+	padding: 0.75rem 0 0.75rem 2rem;
+	position: relative;
+	border-bottom: 1px solid var(--primary-color-dark);
+}
+
+.workspace-list li:last-child {
+	border-bottom: none;
+}
+
+.workspace-list li::before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: var(--accent-color-2);
+	font-weight: 700;
+}
+
+.guide-steps {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.guide-step {
+	display: grid;
+	grid-template-columns: 35% minmax(0, 1fr);
+	background-color: var(--primary-color-light);
+	border: 1px solid var(--primary-color-dark);
+	border-radius: 0.75rem;
+	overflow: hidden;
+}
+
+.step-image {
+	margin: 0;
+	background-color: var(--secondary-color-light);
+	position: relative;
+	min-height: 14rem;
+}
+
+.step-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 14rem;
+	object-fit: cover;
+}
+
+.step-image figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(48, 28, 64, 0.85);
+	color: white;
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.step-content {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.step-number {
+	color: var(--accent-color-1);
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: "Cinzel", serif;
+}
+
+.step-content h3 {
+	font-size: 1.5rem;
+	margin: 0.5rem 0 1rem;
+}
+
+.step-content p {
+	margin: 0;
+	line-height: 1.7;
+}
+
+.techniques-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.technique-card {
+	background-color: var(--primary-color-light);
+	border: 1px solid var(--primary-color-dark);
+	border-radius: 0.75rem;
+	overflow: hidden;
+	transition: box-shadow 0.2s ease;
+}
+
+.technique-card:hover {
+	box-shadow: 0 8px 25px rgba(48, 28, 64, 0.12);
+}
+
+.technique-card figure {
+	margin: 0;
+	background-color: var(--secondary-color-light);
+	position: relative;
+}
+
+.technique-card img {
+	display: block;
+	width: 100%;
+	height: 13rem;
+	object-fit: cover;
+}
+
+.technique-card figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0.5rem;
+	background-color: rgba(48, 28, 64, 0.85);
+	color: white;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.technique-content {
+	padding: 1.5rem;
+}
+
+.technique-content h3 {
+	font-size: 1.2rem;
+	margin: 0 0 1rem;
+}
+
+.technique-content p {
+	margin: 0;
+	line-height: 1.7;
+}
+
+.guide-step img,
+.technique-card img {
+	display: block;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: center 60%;
+}
+
+
+/* Stores and Events page */
+
+.stores-page {
+	padding-bottom: 0;
+}
+
+.stores-introduction {
+	background-color: var(--secondary-color-dark);
+	text-align: center;
+	padding: 5rem 1.5rem;
+}
+
+.stores-introduction .eyebrow {
+	color: var(--accent-color-1);
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+}
+
+.stores-introduction h1 {
+	color: var(--primary-color-light);
+	font-size: 2.75rem;
+	margin: 0 auto 1.5rem;
+}
+
+.stores-introduction > p:not(.eyebrow) {
+	max-width: 45rem;
+	margin: 0 auto;
+	color: var(--primary-color);
+	line-height: 1.7;
+}
+
+.stores-section {
+	width: 90%;
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+
+.stores-section > h2,
+.events-section > h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 0 0 1.5rem;
+}
+
+.stores-section > h2::after,
+.events-section > h2::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 2px;
+	background-color: var(--accent-color-1);
+	margin: 1rem auto 0;
+}
+
+.stores-section > h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 3rem 0 1.5rem;
+}
+
+.stores-description {
+	max-width: 45rem;
+	margin: 0 auto 2rem;
+	text-align: center;
+	line-height: 1.7;
+}
+
+.store-list {
+	display: grid;
+	gap: 1.5rem;
+	margin-top: 2.5rem;
+}
+
+.store-card {
+	display: grid;
+	grid-template-columns: 35% minmax(0, 1fr);
+	background-color: var(--primary-color-light);
+	border: 1px solid var(--primary-color-dark);
+	border-radius: 0.75rem;
+	overflow: hidden;
+}
+
+.store-image {
+	position: relative;
+	margin: 0;
+	min-height: 15rem;
+	background-color: var(--secondary-color-light);
+}
+
+.store-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 15rem;
+	object-fit: cover;
+}
+
+.store-image figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0.6rem;
+	background-color: rgba(48, 28, 64, 0.85);
+	color: white;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.store-content {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.store-content h4 {
+	font-size: 1.5rem;
+	margin: 0 0 1rem;
+}
+
+.store-content p {
+	line-height: 1.7;
+	margin: 0 0 1rem;
+}
+
+.store-content address {
+	font-style: normal;
+	color: var(--neutral-grey);
+	margin-bottom: 1.5rem;
+}
+
+.store-button {
+	display: inline-block;
+	background-color: var(--secondary-color);
+	color: white;
+	text-decoration: none;
+	padding: 0.8rem 1.4rem;
+	border-radius: 0.4rem;
+	font-weight: 600;
+	transition: background-color 0.2s ease;
+}
+
+.store-button:hover,
+.store-button:focus-visible {
+	background-color: var(--secondary-color-dark);
+	color: white;
+}
+
+.events-section {
+	background-color: var(--primary-color-dark);
+	padding: 4rem max(5%, calc((100% - 70rem) / 2));
+}
+
+.events-description {
+	max-width: 45rem;
+	margin: 0 auto 2.5rem;
+	text-align: center;
+	line-height: 1.7;
+}
+
+.events-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.event-card {
+	background-color: var(--primary-color-light);
+	padding: 2rem;
+	border: 1px solid var(--accent-color-1);
+	border-radius: 0.75rem;
+}
+
+.event-label {
+	display: inline-block;
+	color: var(--accent-color-1);
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-bottom: 1rem;
+}
+
+.event-card h3 {
+	font-size: 1.4rem;
+	margin: 0 0 1rem;
+}
+
+.event-card p {
+	line-height: 1.7;
+	margin: 0 0 1.5rem;
+}
+
+.event-link {
+	display: inline-block;
+	background-color: var(--secondary-color);
+	color: white;
+	text-decoration: none;
+	padding: 0.75rem 1.2rem;
+	border-radius: 0.4rem;
+	font-weight: 600;
+}
+
+.event-link:hover,
+.event-link:focus-visible {
+	background-color: var(--secondary-color-dark);
+	color: white;
+}
+
+.events-note {
+	text-align: center;
+	font-size: 0.9rem;
+	margin: 2rem auto 0;
+	max-width: 40rem;
+	line-height: 1.6;
+}
+
+.map-credit {
+	float: right;
+	max-width: 100%;
+	margin: 1.25rem 0 0;
+	font-size: 0.8rem;
+}
+
+.stores-section::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/* Contact page */
+
+.contact-page {
+	padding-bottom: 0;
+}
+
+.contact-introduction {
+	background-color: var(--secondary-color-dark);
+	text-align: center;
+	padding: 5rem 1.5rem;
+}
+
+.contact-introduction .eyebrow {
+	color: var(--accent-color-1);
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+}
+
+.contact-introduction h1 {
+	color: var(--primary-color-light);
+	font-size: 2.75rem;
+	margin: 0 auto 1.5rem;
+}
+
+.contact-introduction > p:not(.eyebrow) {
+	max-width: 45rem;
+	margin: 0 auto;
+	color: var(--primary-color);
+	line-height: 1.7;
+}
+
+.contact-section {
+	width: 90%;
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 4rem 0 5rem;
+}
+
+.contact-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	text-align: center;
+	margin-bottom: 3rem;
+	padding: 2.5rem 2rem;
+	background-color: var(--primary-color-light);
+	border-bottom: 2px solid var(--primary-color-dark);
+}
+
+.contact-heading h2 {
+	font-size: 2rem;
+	max-width: none;
+	margin: 0;
+}
+
+.contact-heading h2::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 2px;
+	background-color: var(--accent-color-1);
+	margin: 1rem auto 0;
+}
+
+.contact-heading p {
+	max-width: 42rem;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+.contact-container {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr;
+	gap: 2rem;
+	align-items: start;
+}
+
+.contact-form {
+	background-color: white;
+	border: 1px solid #e7dac6;
+	border-top: 3px solid var(--accent-color-1);
+	border-radius: 0.75rem;
+	padding: 2.5rem;
+}
+
+.contact-form h3 {
+	font-size: 1.5rem;
+	margin: 0 0 0.75rem;
+}
+
+.form-intro {
+	line-height: 1.6;
+	margin-bottom: 2rem;
+}
+
+.contact-form fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0 0 1.5rem;
+	min-width: 0;
+}
+
+.contact-form legend {
+	font-weight: 600;
+	color: var(--secondary-color-dark);
+	margin-bottom: 1rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.form-group label {
+	font-weight: 600;
+	color: var(--secondary-color-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.85rem 1rem;
+	font: inherit;
+	color: #302040;
+	background-color: white;
+	border: 1px solid #cfc4d4;
+	border-radius: 0.4rem;
+	transition: border-color 0.2s ease;
+}
+
+.form-group textarea {
+	resize: vertical;
+	min-height: 9rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+	outline: 2px solid var(--accent-color-1);
+	outline-offset: 2px;
+	border-color: var(--secondary-color);
+}
+
+.contact-submit {
+	display: inline-block;
+	background-color: var(--secondary-color);
+	color: white;
+	border: none;
+	padding: 0.9rem 1.8rem;
+	border-radius: 0.4rem;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+	background-color: var(--secondary-color-dark);
+}
+
+.form-feedback {
+	margin-top: 1rem;
+	line-height: 1.6;
+	color: var(--secondary-color-dark);
+}
+
+.form-feedback:empty {
+	display: none;
+}
+
+.contact-info {
+	background-color: var(--secondary-color-dark);
+	color: white;
+	border-radius: 0.75rem;
+	padding: 2.5rem;
+}
+
+.contact-label {
+	display: block;
+	color: var(--accent-color-1);
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.contact-info h3 {
+	color: white;
+	font-size: 1.8rem;
+	margin: 0 0 1.5rem;
+}
+
+.contact-info h4 {
+	color: white;
+	font-size: 1.2rem;
+	margin: 0 0 1rem;
+}
+
+.contact-info p {
+	color: white;
+	line-height: 1.7;
+	margin-bottom: 1.2rem;
+}
+
+.contact-info-divider {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.25);
+	margin: 2rem 0;
+}
+
+.contact-info-button {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	border: 1px solid var(--accent-color-1);
+	border-radius: 0.4rem;
+	padding: 0.8rem 1.2rem;
+	font-weight: 600;
+	transition: background-color 0.2s ease;
+}
+
+.contact-info-button:hover,
+.contact-info-button:focus-visible {
+	background-color: var(--secondary-color);
+	color: white;
+}
+
+.contact-closing {
+	background-color: #e9e0d0;
+	text-align: center;
+	padding: 4rem 1.5rem;
+}
+
+.contact-closing h2 {
+	font-size: 2rem;
+	margin: 0 0 1.5rem;
+}
+
+.contact-closing p {
+	max-width: 42rem;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+.contact-info address {
+	font-style: normal;
+	margin-bottom: 1.5rem;
+}
+
+.contact-info address a {
+	color: white;
+	font-weight: 600;
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color-1);
+	text-underline-offset: 4px;
+}
+
+.contact-info address a:hover {
+	color: var(--accent-color-1);
+}
+
+
+/* Footer and image credits */
+
+body > footer {
+	background-color: var(--secondary-color-dark);
+	color: var(--primary-color);
+	padding: 3rem 1.5rem;
+	text-align: center;
+}
+
+footer h2 {
+	color: var(--primary-color-light);
+	font-size: 1.5rem;
+	margin: 0 0 1rem;
+}
+
+footer p {
+	margin: 0.5rem 0;
+}
+
+footer .copyright {
+	margin-top: 2rem;
+	font-size: 0.85rem;
+	color: var(--primary-color-dark);
+}
+
+.image-credits {
+	max-width: 900px;
+	margin: 3rem auto;
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 0.85rem;
+	line-height: 1.7;
+}
+
+.image-credits h2 {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.image-credits p {
+	margin-bottom: 0.75rem;
+}
+
+.image-credits a {
+	text-decoration: underline;
+}
+
+
+/* Cookie message */
+
+.cookie-toggle {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+.cookie-notice {
+	position: fixed;
+	bottom: 0.75rem;
+	left: 0.75rem;
+	z-index: 9999;
+
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+
+	max-width: 17rem;
+	padding: 0.75rem 0.85rem;
+
+	background-color: var(--secondary-color-dark);
+	color: var(--primary-color-light);
+
+	border: 1px solid var(--accent-color-1);
+	border-radius: 0.4rem;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.cookie-notice p {
+	margin: 0;
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+
+.cookie-notice strong {
+	color: var(--accent-color-1);
+}
+
+.cookie-close {
+	cursor: pointer;
+	color: white;
+	font-size: 1.25rem;
+	line-height: 1;
+}
+
+.cookie-close:hover {
+	color: var(--accent-color-1);
+}
+
+.cookie-toggle:checked + .cookie-notice {
+	display: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+
+/* Mobile and tablet styles */
+
+/* Home cards - mobile */
+@media screen and (max-width: 768px) {
+	.card-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Header and home - mobile */
+@media screen and (max-width: 768px) {
+	body > header {
+		flex-direction: column;
+		gap: 1rem;
+		padding: 1.5rem;
+	}
+
+	nav ul {
+		justify-content: center;
+		gap: 0.75rem 1rem;
+	}
+
+	nav a {
+		font-size: 0.8rem;
+	}
+
+	.introduction {
+		padding: 3rem 1.5rem 2rem;
+	}
+
+	.introduction h1 {
+		font-size: 1.7rem;
+	}
+
+	.introduction p {
+		font-size: 1rem;
+	}
+}
+
+/* Discover section - mobile */
+@media screen and (max-width: 768px) {
+	.discover {
+		margin: 1rem 1.5rem 3rem;
+		padding: 2.5rem 1.25rem;
+	}
+
+	.discover h2 {
+		font-size: 1.5rem;
+	}
+}
+
+/* Tabletop and Lore - mobile */
+@media screen and (max-width: 768px) {
+	.lore-page {
+		padding: 0 0 3rem;
+	}
+
+	.lore-introduction {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.lore-introduction h1 {
+		font-size: 1.8rem;
+	}
+
+	.lore-introduction > p:not(.eyebrow) {
+		font-size: 1rem;
+	}
+
+	.lore-worlds {
+		padding: 3rem 1.5rem 0;
+	}
+
+	.world-card {
+		grid-template-columns: 1fr;
+	}
+
+	.world-card img {
+		height: 13rem;
+		min-height: 0;
+	}
+
+	.world-card-content {
+		padding: 1.5rem;
+	}
+
+	.world-card-content h3 {
+		font-size: 1.25rem;
+	}
+}
+
+/* Materials and Tools - mobile */
+@media screen and (max-width: 768px) {
+	.materials-introduction {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.materials-introduction h1 {
+		font-size: 1.8rem;
+	}
+
+	.materials-content {
+		width: 90%;
+		padding-top: 3rem;
+	}
+
+	.materials-content > h2 {
+		font-size: 1.5rem;
+	}
+
+	.materials-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.material-card {
+		padding: 1.5rem;
+	}
+
+	.tools-table {
+		font-size: 0.85rem;
+	}
+
+	.tools-table th,
+	.tools-table td {
+		padding: 0.75rem 0.5rem;
+		overflow-wrap: anywhere;
+	}
+}
+
+/* Beginner Guide - tablet */
+@media screen and (max-width: 900px) {
+	.techniques-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* Beginner Guide - mobile */
+@media screen and (max-width: 768px) {
+	.guide-page {
+		padding-bottom: 3rem;
+	}
+
+	.guide-introduction {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.guide-introduction h1 {
+		font-size: 1.8rem;
+	}
+
+	.guide-section {
+		padding-top: 3rem;
+	}
+
+	.guide-section > h2 {
+		font-size: 1.5rem;
+	}
+
+	.workspace-card {
+		padding: 1.5rem;
+	}
+
+	.guide-step {
+		grid-template-columns: 1fr;
+	}
+
+	.step-image,
+	.step-image img {
+		min-height: 0;
+	}
+
+	.step-image img {
+		height: 13rem;
+	}
+
+	.step-content {
+		padding: 1.5rem;
+	}
+
+	.techniques-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.technique-card img {
+		height: 12rem;
+	}
+}
+
+/* Stores and Events - tablet */
+@media screen and (max-width: 900px) {
+	.store-card {
+		grid-template-columns: 40% minmax(0, 1fr);
+	}
+}
+
+/* Stores and Events - mobile */
+@media screen and (max-width: 768px) {
+	.stores-introduction {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.stores-introduction h1 {
+		font-size: 1.8rem;
+	}
+
+	.stores-section {
+		padding: 3rem 0;
+	}
+
+	.stores-section > h2,
+	.events-section > h2 {
+		font-size: 1.5rem;
+	}
+
+	.store-card {
+		grid-template-columns: 1fr;
+	}
+
+	.store-image,
+	.store-image img {
+		min-height: 0;
+	}
+
+	.store-image img {
+		height: 13rem;
+	}
+
+	.store-content {
+		padding: 1.5rem;
+	}
+
+	.events-section {
+		padding: 3rem 5%;
+	}
+
+	.events-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.event-card {
+		padding: 1.5rem;
+	}
+}
+
+/* Contact - tablet */
+@media screen and (max-width: 900px) {
+	.contact-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Contact - mobile */
+@media screen and (max-width: 768px) {
+	.contact-introduction {
+		padding: 3.5rem 1.5rem;
+	}
+
+	.contact-introduction h1 {
+		font-size: 1.8rem;
+	}
+
+	.contact-section {
+		padding: 3rem 0;
+	}
+
+    
+	.contact-form,
+	.contact-info {
+		padding: 1.5rem;
+	}
+
+	.contact-container {
+		gap: 1.5rem;
+	}
+
+	.contact-closing {
+		padding: 3rem 1.5rem;
+	}
+}
+
+/* Contact heading - mobile */
+@media screen and (max-width: 768px) {
+	.contact-heading {
+		padding: 2rem 1.25rem;
+	}
+
+	.contact-heading h2 {
+		font-size: 1.5rem;
+	}
+}
+
+/* Cookie message - mobile */
+@media screen and (max-width: 768px) {
+	.cookie-notice {
+		max-width: 13rem;
+		padding: 0.6rem;
+	}
+}
+
