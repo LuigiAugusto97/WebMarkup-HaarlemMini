@@ -1,5 +1,5 @@
 Student name: Luís Augusto Santos Almeida da Silva
 Student number: 763207
 Student class: IT1A
-GitHub Repository: 
+GitHub Repository: https://github.com/LuigiAugusto97/WebMarkup-HaarlemMini
 GitHub Pages URL: 
